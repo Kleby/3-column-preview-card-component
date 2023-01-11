@@ -1,0 +1,14 @@
+@import "_variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-height: 80% ;
+  height: 100vh;
+  font-size: 0.9375rem;
+  background-color: $--light-gray-color;
+}

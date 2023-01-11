@@ -1,0 +1,66 @@
+@import "_base";
+@import "_variables";
+
+.container{
+  display: grid;
+  grid-template-areas: 1;
+  padding: 20% 5%;
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 12% 15%;
+    height: 75vh;
+   
+    img{
+      width: 4.5rem;
+      margin-top: 5%;
+    }
+  
+    h1{
+      font-family: $--font-subtitle;
+      color: $--light-gray-color;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin: 15% 0;
+    }
+    p{
+      font-family: $--font-paragraph;
+      color: $--paragraph-color;
+      line-height: 1.725rem;
+    }
+
+    .btn-more{
+      margin-top: 15%;
+      border: none;
+      width: 60%;
+      padding: 1rem;
+      border-radius: 1.725rem;
+      font-size: 1rem;
+      font-family: $--font-paragraph;
+    }
+  }
+
+
+  .sedan{
+    background-color: $--firts-card-bg;
+    border-radius: 10px 10px 0 0;
+
+    .btn-more{
+      color: $--firts-card-bg;
+    }
+
+  }
+  .suv{
+    background-color: $--middle-card-bg;
+
+    .btn-more{
+      color: $--middle-card-bg;
+    }
+  }
+  .luxury{
+    background-color: $--last-card-bg;
+    border-radius: 0 0 10px 10px;
+  }
+}
